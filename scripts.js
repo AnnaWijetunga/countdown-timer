@@ -19,7 +19,7 @@ function timer(seconds) {
         clearInterval(countdown);
         return;
       }
-      // display the time left
+      // display the time left over
       displayTimeLeft(secondsLeft);
     }, 1000);
   }
@@ -28,6 +28,7 @@ function timer(seconds) {
   function displayTimeLeft(seconds) {
     const minutes = Math.floor(seconds / 60);
     const remainderSeconds = seconds % 60;
+    // template literals
     const display = `${minutes}:${remainderSeconds < 10 ? '0' : '' }${remainderSeconds}`;
     document.title = display;
     timerDisplay.textContent = display;
