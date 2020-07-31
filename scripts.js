@@ -45,6 +45,7 @@ function timer(seconds) {
 
   function startTimer() {
     const seconds = parseInt(this.dataset.time);
+    // set timer for seconds
     timer(seconds);
   }
 
