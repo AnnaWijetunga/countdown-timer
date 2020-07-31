@@ -24,7 +24,6 @@ function timer(seconds) {
     }, 1000);
   }
 
-
   function displayTimeLeft(seconds) {
     const minutes = Math.floor(seconds / 60);
     const remainderSeconds = seconds % 60;
@@ -33,7 +32,6 @@ function timer(seconds) {
     document.title = display;
     timerDisplay.textContent = display;
   }
-
 
   function displayEndTime(timestamp) {
     const end = new Date(timestamp);
